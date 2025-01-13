@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chika Onyewuchi | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+  <header id="header">
+    <div class="header-container">
+      <h1 class="logo">CHIKA ONYEWUCHI</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-links">
+        <a href="mailto:jermaineosuji@gmail.com"><img src="images/mail.png" alt="Email"></a>
+        <a href="https://linkedin.com/in/chika-onyewuchi" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/chikaonye" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+      </div>
+    </div>
+  </header>
+  
+
+  <section id="home">
+    <div class="home-content">
+      
+      <div class="home-content-text">
+        <h2>Hi, I am Chika Onyewuchi</h2>
+        <p>I am a Software Developer & Cybersecurity Analyst</p>
+      </div>
+      <img src="images/chika-photo.jpg" alt="Your Photo">
+    </div>
+  </section>
+  
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Chika Onyewuchi, a passionate individual with a growing interest in cybersecurity and a solid foundation in programming and web technologies, including C#, Java, HTML, PHP, Kotlin, and SQL.
+      While my cybersecurity knowledge is at a foundational level, I am eager to learn and expand my expertise in protecting systems and networks from cyber threats.
+      My technical background enables me to approach challenges creatively and develop solutions that prioritize security.
+      I am driven by a commitment to continuous learning and enjoy exploring new tools and technologies to build my skills and contribute meaningfully to the cybersecurity field.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-cards">
+      <div class="skill-card">
+        <img src="images/csharp-logo.png" alt="C# Logo">
+        <h3>C#</h3>
+        <div class="progress-bar"><div style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <img src="images/java-logo.png" alt="Java Logo">
+        <h3>Java</h3>
+        <div class="progress-bar"><div style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <img src="images/html5-logo.png" alt="HTML Logo">
+        <h3>HTML & CSS</h3>
+        <div class="progress-bar"><div style="width: 70%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <img src="images/php-logo.png" alt="PHP Logo">
+        <h3>PHP</h3>
+        <div class="progress-bar"><div style="width: 60%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <img src="images/kotlin-logo.png" alt="Kotlin Logo">
+        <h3>Kotlin</h3>
+        <div class="progress-bar"><div style="width: 40%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <img src="images/sql-logo.png" alt="SQL Logo">
+        <h3>SQL</h3>
+        <div class="progress-bar"><div style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <img src="images/python-logo.png" alt="Python Logo">
+        <h3>Python</h3>
+        <p>IN PROGRESS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work">
+    <h2>My Work</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="images/disaster-alleviation-site.png" alt="Project 1">
+        <h3>Disaster Alleviation Foundation</h3>
+        <p>Website that captures disasters and provided aids. Written in CSHTML & C#.</p>
+        <a href="https://github.com/chikaonye/DisasterAlleviationRepository" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <!--form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form-->
+  </br>
+    <div class="social-links">
+      <a href="mailto:jermaineosuji@gmail.com"><img src="images/mail.png" alt="Email"></a>
+      <a href="https://linkedin.com/in/chika-onyewuchi" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/chikaonye" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Chika Onyewuchi. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll feature -->
+  <script>
+    let lastScrollTop = 0;
+    const header = document.getElementById('header');
+    const headerHeight = header.offsetHeight;
+
+    window.addEventListener('scroll', function() {
+      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      
+      if (currentScroll > lastScrollTop && currentScroll > headerHeight) {
+        header.style.top = `-${headerHeight}px`;
+      } else if (currentScroll < lastScrollTop) {
+        header.style.top = "0";
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  </script>
+  
+</body>
+</html>
