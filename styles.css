@@ -148,6 +148,29 @@ nav {
   .home-content-text {
     text-align: left;
   }
+
+.download-cv-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    border: 2px solid #011EA0;
+    border-radius: 50px;
+    transition: background 0.3s, transform 0.2s, border-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .download-cv-btn:hover {
+    background: #011EA0;
+    color: #fff;
+    border-color: #011EA0;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  }
   
   /* About Section */
   #about {
